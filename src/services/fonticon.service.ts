@@ -1,9 +1,10 @@
 // angular
-import {Injectable, Inject} from "@angular/core";
+import {Injectable, Inject, OpaqueToken} from "@angular/core";
 // libs
 import {BehaviorSubject} from "rxjs/BehaviorSubject";
 // nativescript
 import {knownFolders} from "tns-core-modules/file-system";
+export let FONT_CONFIG = new OpaqueToken("font.config");
 
 @Injectable()
 export class TNSFontIconService {
@@ -12,7 +13,7 @@ export class TNSFontIconService {
     public css: any = {}; // font icon collections containing maps of classnames to unicode
     private _currentName: string; // current collection name
 
-    constructor(@Inject("FONT_ICON_CONFIG") private config: any) {
+    constructor(@Inject(FONT_CONFIG) private config: any) {
         this.filesLoaded = new BehaviorSubject(null);
         this.loadCss();
     }

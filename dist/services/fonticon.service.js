@@ -18,6 +18,7 @@ var core_1 = require("@angular/core");
 var BehaviorSubject_1 = require("rxjs/BehaviorSubject");
 // nativescript
 var file_system_1 = require("tns-core-modules/file-system");
+exports.FONT_CONFIG = new core_1.OpaqueToken("font.config");
 var TNSFontIconService = TNSFontIconService_1 = (function () {
     function TNSFontIconService(config) {
         this.config = config;
@@ -95,7 +96,7 @@ var TNSFontIconService = TNSFontIconService_1 = (function () {
 TNSFontIconService.debug = false;
 TNSFontIconService = TNSFontIconService_1 = __decorate([
     core_1.Injectable(),
-    __param(0, core_1.Inject("FONT_ICON_CONFIG")),
+    __param(0, core_1.Inject(exports.FONT_CONFIG)),
     __metadata("design:paramtypes", [Object])
 ], TNSFontIconService);
 exports.TNSFontIconService = TNSFontIconService;

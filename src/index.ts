@@ -6,6 +6,7 @@ import {TNSFontIconService} from "./services/fonticon.service";
 export * from './pipes/fonticon.pipe';
 export * from './services/fonticon.service';
 
+
 @NgModule({
     declarations: [
         TNSFontIconPipe,

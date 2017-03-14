@@ -1,4 +1,6 @@
+import { OpaqueToken } from "@angular/core";
 import { BehaviorSubject } from "rxjs/BehaviorSubject";
+export declare let FONT_CONFIG: OpaqueToken;
 export declare class TNSFontIconService {
     private config;
     static debug: boolean;
