@@ -30,8 +30,6 @@ Thumbs.db
 
 # Node Files #
 /node_modules
-/src/app/node_modules
-/bower_components
 
 # Coverage #
 /coverage/
@@ -41,8 +39,10 @@ Thumbs.db
 /typings/
 /tsd_typings/
 
+src/**/*.ngsummary.json
+src/**/*.ngfactory.ts
+
 # Dist #
-/dist
 /public/__build__/
 /src/*/__build__/
 __build__/**
@@ -53,17 +53,4 @@ __build__/**
 
 # IDE #
 .idea/
-*.swp
-*.tgz
-*.js
-*.js.map
-*.metadata.json
-*.d.ts
-!index.d.ts
-!*.e2e.js
-!karma*.js
-!test-main.js
-src/lib
-src/platforms
-src/hooks
-src/node_modules
+/hooks

@@ -48,8 +48,8 @@ src/platforms
 Thumbs.db
 .DS_Store
 *.yml
-!src/app/pipes/*
-!src/app/services/*
+!src/pipes/*
+!src/services/*
 *.ts
 !*.d.ts
 references.d.ts
