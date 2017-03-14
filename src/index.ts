@@ -6,11 +6,6 @@ import {TNSFontIconService} from "./services/fonticon.service";
 export * from './pipes/fonticon.pipe';
 export * from './services/fonticon.service';
 
-let config: any;
-export const iconConfig = function () {
-  return new TNSFontIconService(config);
-};
-
 @NgModule({
     declarations: [
         TNSFontIconPipe,
@@ -23,13 +18,10 @@ export const iconConfig = function () {
 })
 export class TNSFontIconModule {
 
-  static forRoot(providedConfig: any): ModuleWithProviders {
-    config = providedConfig;
-    return {
-      ngModule: TNSFontIconModule,
-      providers: [
-        { provide: TNSFontIconService, useFactory: (iconConfig) }
-      ]
-    };
-  }
+    static forRoot(): ModuleWithProviders {
+        return {
+            ngModule: TNSFontIconModule,
+            providers: [TNSFontIconService]
+        };
+    }
 }

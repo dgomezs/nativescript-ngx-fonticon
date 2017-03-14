@@ -15,20 +15,13 @@ var fonticon_service_1 = require("./services/fonticon.service");
 // for manual imports
 __export(require("./pipes/fonticon.pipe"));
 __export(require("./services/fonticon.service"));
-var config;
-exports.iconConfig = function () {
-    return new fonticon_service_1.TNSFontIconService(config);
-};
 var TNSFontIconModule = TNSFontIconModule_1 = (function () {
     function TNSFontIconModule() {
     }
-    TNSFontIconModule.forRoot = function (providedConfig) {
-        config = providedConfig;
+    TNSFontIconModule.forRoot = function () {
         return {
             ngModule: TNSFontIconModule_1,
-            providers: [
-                { provide: fonticon_service_1.TNSFontIconService, useFactory: (exports.iconConfig) }
-            ]
+            providers: [fonticon_service_1.TNSFontIconService]
         };
     };
     return TNSFontIconModule;

@@ -12,7 +12,7 @@ export class TNSFontIconService {
     public css: any = {}; // font icon collections containing maps of classnames to unicode
     private _currentName: string; // current collection name
 
-    constructor(private config: any) {
+    constructor(@Inject("FONT_ICON_CONFIG") private config: any) {
         this.filesLoaded = new BehaviorSubject(null);
         this.loadCss();
     }
