@@ -26,7 +26,6 @@
     "dist"
   ],
   "angularCompilerOptions": {
-    "skipTemplateCodegen": true,
-    "skipMetadataEmit": false
+    "skipTemplateCodegen": false
   }
 }
