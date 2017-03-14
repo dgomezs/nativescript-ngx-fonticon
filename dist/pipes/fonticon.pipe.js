@@ -93,4 +93,3 @@ function getCollectionName(className, args) {
         return '';
     }
 }
-//# sourceMappingURL=/home/dgomezs/workspace/project-eutychia/nativescript-ngx-fonticon/pipes/fonticon.pipe.js.map

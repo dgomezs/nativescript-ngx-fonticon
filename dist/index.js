@@ -40,4 +40,3 @@ TNSFontIconModule = TNSFontIconModule_1 = __decorate([
 ], TNSFontIconModule);
 exports.TNSFontIconModule = TNSFontIconModule;
 var TNSFontIconModule_1;
-//# sourceMappingURL=/home/dgomezs/workspace/project-eutychia/nativescript-ngx-fonticon/index.js.map

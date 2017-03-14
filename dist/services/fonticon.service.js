@@ -101,4 +101,3 @@ TNSFontIconService = TNSFontIconService_1 = __decorate([
 ], TNSFontIconService);
 exports.TNSFontIconService = TNSFontIconService;
 var TNSFontIconService_1;
-//# sourceMappingURL=/home/dgomezs/workspace/project-eutychia/nativescript-ngx-fonticon/services/fonticon.service.js.map
