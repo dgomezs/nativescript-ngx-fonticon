@@ -2,6 +2,9 @@
   "name": "nativescript-ngx-fonticon",
   "version": "2.1.2",
   "description": "Use custom font icon collections seamlessly with NativeScript for Angular.",
+  "files": [
+    "dist"
+  ],
   "module": "dist/index.js",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
